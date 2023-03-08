@@ -1,11 +1,9 @@
-
 (function (window, document, undefined) {
   // code that should be taken care of right away
 
   window.onload = init;
 
   function init() {
-
     const btnSwitch = document.querySelector("#switch-1");
     btnSwitch.addEventListener("click", () => {
       document.body.classList.toggle("dark");
@@ -77,7 +75,5 @@
     // setInterval(function () {
     //   Next();
     // }, 5000);
-
   }
-
 })(window, document, undefined);

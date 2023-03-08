@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+:root {
+  --color-background-one: rgba(0, 0, 0, 0.777);
+  --color-title-section: url(./Image-Principal/projects/animated-text-fill.png);
+}
+
+.text-title-section {
+  background-color: var(--color-background-one);
+  margin-bottom: 0%;
+}
+
+.text-title-section span {
+  text-align: center;
+  font: 700 2em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background: var(--color-title-section) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: aitf 80s linear infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.projects-carousel {
+  width: 100%;
+  height: 100%;
+  padding: 0 2% 0 2%;
+  margin-bottom: 10%;
+  filter: brightness(50%);
+}
+
+.projects-carousel:hover {
+  filter: brightness(100%);
+}
+
+.projects-carousel2 {
+  width: 100%;
+  height: 100%;
+  padding: 0 2% 0 2%;
+  margin-bottom: 10%;
+  filter: brightness(50%);
+}
+
+.projects-carousel2:hover {
+  filter: brightness(100%);
+}
+
+.carousel-inner img {
+  height: 100vw;
+  width: 100%;
+}
+
+.carousel-inner {
+  height: 100vw;
+}
+
+.carousel {
+  border: black solid;
+}
+
+.icon-projects img {
+  padding: 2.5%;
+  width: 8%;
+  height: 0%;
+  background: rgba(255, 255, 255, 0.677);
+  clip-path: circle(50%);
+}
+
+.carousel-item h5 {
+  font-family: "Lobster", cursive;
+  font-size: 8vmin;
+  margin-bottom: 12%;
+  text-decoration: dashed;
+  background-color: rgba(255, 255, 255, 0.559);
+  color: black;
+  text-shadow: none;
+}
+
+.hit-the-floor {
+  background-color: var(--color-background-one);
+  margin-top: 15%;
+  margin-bottom: 5%;
+  color: #fff;
+  font-size: 8vmin;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-align: center;
+  text-shadow: none;
+}
+
+.card-body {
+  height: 100%;
+}
+
+.card-title {
+  height: 30%;
+}
+
+@media screen and (min-width: 425px) {
+  .projects-carousel {
+    width: 100%;
+    height: 100%;
+    padding: 0 15%;
+    margin-bottom: 10%;
+  }
+
+  .projects-carousel2 {
+    width: 100%;
+    height: 100%;
+    padding: 0 15%;
+    margin-bottom: 10%;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .carousel-inner {
+    height: 400px;
+  }
+
+  .carousel-item {
+    display: flex;
+  }
+
+  .text-title-section span {
+    text-align: center;
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    background: var(--color-title-section) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aitf 80s linear infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+
+  .projects-carousel {
+    width: 100%;
+    height: 100%;
+    padding-right: 5%;
+    margin-bottom: 10%;
+  }
+
+  .projects-carousel2 {
+    width: 100%;
+    padding-left: 5%;
+    margin-bottom: 10%;
+  }
+
+  .carousel-inner img {
+    height: 400px;
+    width: 100%;
+  }
+
+  .carousel {
+    border: black solid;
+  }
+
+  .icon-projects img {
+    padding: 2.5%;
+    width: 20%;
+    height: 20%;
+    background: rgba(255, 255, 255, 0.677);
+    clip-path: circle(50%);
+  }
+
+  .hit-the-floor {
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+      0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .carousel-caption {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+
+  .carousel-item h5 {
+    font-family: "Lobster", cursive;
+    font-size: 8vmin;
+    margin-bottom: 12%;
+    text-decoration: dashed;
+    background-color: rgba(255, 255, 255, 0.559);
+    color: black;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+      0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+}
