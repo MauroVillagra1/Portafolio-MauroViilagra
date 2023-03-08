@@ -1,0 +1,54 @@
+.skills {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1% 0 1% 0;
+}
+
+.all-skill {
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-skills {
+    text-align: center;
+}
+
+.skills-background {
+    width: 100%;
+    padding: 5% 5% 0 5%;
+}
+
+@media screen and (min-width: 375px) {
+    .skills img {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .skills img {
+        width: 45%;
+        height: 45%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .skills img {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills img {
+        width: 50%;
+        height: 50%;
+    }
+}
